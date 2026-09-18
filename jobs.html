@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI×Agent 岗位查阅（偏医疗方向，非医疗机构）</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0e17;color:#e2e8f0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6;padding:32px 20px 80px}
+.wrap{max-width:1080px;margin:0 auto}
+header{text-align:center;margin-bottom:8px}
+h1{font-size:26px;font-weight:800;background:linear-gradient(90deg,#22d3ee,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:#94a3b8;font-size:14px;margin-top:6px}
+.stat{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:22px 0}
+.stat .s{background:#111827;border:1px solid #1f2937;border-radius:12px;padding:12px 22px;text-align:center}
+.stat .n{font-size:24px;font-weight:800;color:#22d3ee}
+.stat .l{font-size:12px;color:#94a3b8}
+.filters{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:18px 0 26px}
+.fbtn{background:#111827;color:#cbd5e1;border:1px solid #1f2937;border-radius:20px;padding:7px 16px;font-size:13px;cursor:pointer;transition:.15s}
+.fbtn:hover{border-color:#22d3ee;color:#22d3ee}
+.fbtn.active{background:#22d3ee;color:#06121a;border-color:#22d3ee;font-weight:700}
+.company{background:#0d1320;border:1px solid #1b2433;border-radius:16px;padding:22px;margin-bottom:22px}
+.co-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.co-head h2{font-size:19px;color:#f1f5f9}
+.co-tag{font-size:12px;color:#22d3ee;background:#22d3ee15;border:1px solid #22d3ee44;border-radius:6px;padding:3px 10px}
+.co-note{color:#94a3b8;font-size:13px;margin:10px 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.card{background:#111927;border:1px solid #1f2a3a;border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px;transition:.15s}
+.card:hover{border-color:#22d3ee66;transform:translateY(-2px)}
+.card-top{display:flex;justify-content:space-between;align-items:center}
+.badge{font-size:11px;padding:2px 9px;border-radius:6px;font-weight:700}
+.city{font-size:12px;color:#94a3b8}
+.jname{font-size:15px;font-weight:700;color:#f1f5f9;line-height:1.35}
+.hl{font-size:12.5px;color:#cbd5e1;flex:1}
+.link{display:inline-block;margin-top:4px;font-size:13px;font-weight:700;color:#22d3ee;text-decoration:none;border:1px solid #22d3ee55;border-radius:8px;padding:7px 12px;text-align:center}
+.link:hover{background:#22d3ee;color:#06121a}
+.exclude{background:#0d1320;border:1px dashed #334155;border-radius:12px;padding:16px 20px;margin-top:6px;color:#94a3b8;font-size:13px}
+.exclude b{color:#cbd5e1}
+footer{text-align:center;color:#64748b;font-size:12px;margin-top:30px}
+</style></head>
+<body><div class="wrap">
+<header>
+  <h1>AI × Agent 岗位查阅</h1>
+  <div class="sub">偏医疗方向 · 只保留 Agent 平台 / 大厂（非医疗机构）· 每个岗位可一键跳招聘页</div>
+</header>
+
+<div class="stat">
+  <div class="s"><div class="n">9</div><div class="l">家公司</div></div>
+  <div class="s"><div class="n">24</div><div class="l">个岗位</div></div>
+  <div class="s"><div class="n">5</div><div class="l">运营类</div></div>
+  <div class="s"><div class="n">15</div><div class="l">产品类</div></div>
+</div>
+
+<div class="filters"><button class="fbtn active" data-f="all">全部 24</button><button class="fbtn" data-f="运营">运营 5</button><button class="fbtn" data-f="产品">产品 15</button><button class="fbtn" data-f="技术">技术 2</button><button class="fbtn" data-f="检索">检索 2</button></div>
+
+
+    <section class="company">
+      <div class="co-head">
+        <h2>腾讯 WorkBuddy</h2>
+        <span class="co-tag">Agent 平台 · 生态运营家族（最对口）</span>
+      </div>
+      <p class="co-note">目标公司。生态 / 开放生态运营家族共 7 个兄弟岗，深圳为主。你主投「生态合作运营-医疗方向」，其余 6 个是同能力可平移的备选。</p>
+      <div class="grid">
+    <div class="card" data-type="运营">
+      <div class="card-top">
+        <span class="badge" style="background:#22d3ee22;color:#22d3ee;border:1px solid #22d3ee55">运营</span>
+        <span class="city">深圳</span>
+      </div>
+      <div class="jname">生态合作运营-医疗方向 ★目标岗</div>
+      <div class="hl">你的主投岗：Agent 生态 × 医疗垂类</div>
+      <a class="link" href="https://careers.tencent.com/jobdesc.html?postId=2077641734367657984" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="运营">
+      <div class="card-top">
+        <span class="badge" style="background:#22d3ee22;color:#22d3ee;border:1px solid #22d3ee55">运营</span>
+        <span class="city">深圳</span>
+      </div>
+      <div class="jname">生态合作运营-SaaS方向</div>
+      <div class="hl">通用 SaaS 生态合作，能力可平移</div>
+      <a class="link" href="https://careers.tencent.com/jobdesc.html?postId=2077641738788454400" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="运营">
+      <div class="card-top">
+        <span class="badge" style="background:#22d3ee22;color:#22d3ee;border:1px solid #22d3ee55">运营</span>
+        <span class="city">深圳</span>
+      </div>
+      <div class="jname">海外生态合作运营</div>
+      <div class="hl">出海生态，英文 / 跨文化场景</div>
+      <a class="link" href="https://careers.tencent.com/jobdesc.html?postId=2077641741384728576" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="运营">
+      <div class="card-top">
+        <span class="badge" style="background:#22d3ee22;color:#22d3ee;border:1px solid #22d3ee55">运营</span>
+        <span class="city">深圳</span>
+      </div>
+      <div class="jname">生态合作运营-金融方向</div>
+      <div class="hl">金融垂类生态，同家族</div>
+      <a class="link" href="https://careers.tencent.com/jobdesc.html?postId=2077641736607416320" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="运营">
+      <div class="card-top">
+        <span class="badge" style="background:#22d3ee22;color:#22d3ee;border:1px solid #22d3ee55">运营</span>
+        <span class="city">深圳/北京</span>
+      </div>
+      <div class="jname">开放生态产品运营(深圳/北京)</div>
+      <div class="hl">开放平台生态运营</div>
+      <a class="link" href="https://careers.tencent.com/jobdesc.html?postId=2092163035144830976" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">深圳</span>
+      </div>
+      <div class="jname">生态高级产品经理</div>
+      <div class="hl">生态侧产品规划</div>
+      <a class="link" href="https://careers.tencent.com/jobdesc.html?postId=2092162746979364864" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">深圳</span>
+      </div>
+      <div class="jname">开放平台高级产品经理</div>
+      <div class="hl">开放平台产品</div>
+      <a class="link" href="https://careers.tencent.com/jobdesc.html?postId=2077641748443742208" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div></div>
+    </section>
+    <section class="company">
+      <div class="co-head">
+        <h2>字节跳动 扣子 Coze</h2>
+        <span class="co-tag">Agent 平台</span>
+      </div>
+      <p class="co-note">国内头部 Agent 开发平台。下面两个偏技术；若想做生态 / 开发者运营，去 jobs.bytedance.com 搜「Coze 生态」。</p>
+      <div class="grid">
+    <div class="card" data-type="技术">
+      <div class="card-top">
+        <span class="badge" style="background:#34d39922;color:#34d399;border:1px solid #34d39955">技术</span>
+        <span class="city">上海</span>
+      </div>
+      <div class="jname">AI Agent 开发工程师-扣子</div>
+      <div class="hl">多 Agent 架构 / Skill 生态</div>
+      <a class="link" href="https://jobs.bytedance.com/experienced/m/position/detail/7614130004889405749" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="技术">
+      <div class="card-top">
+        <span class="badge" style="background:#34d39922;color:#34d399;border:1px solid #34d39955">技术</span>
+        <span class="city">北京</span>
+      </div>
+      <div class="jname">AI Agent 算法和策略工程师-扣子</div>
+      <div class="hl">Agent 效果评测与调优</div>
+      <a class="link" href="https://jobs.bytedance.com/experienced/position/7614129839399127349/detail?sourceJobId=7514524939623893256" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div></div>
+    </section>
+    <section class="company">
+      <div class="co-head">
+        <h2>百度</h2>
+        <span class="co-tag">Agent + 医疗（技术平台，非医疗机构）</span>
+      </div>
+      <p class="co-note">百度健康把医疗能力 Agent 化，岗位偏 AI 产品。是「往医疗发展」的第一梯队落点。</p>
+      <div class="grid">
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">北京</span>
+      </div>
+      <div class="jname">AI Agent 产品经理(J105400) 医疗领域 Agent</div>
+      <div class="hl">医疗领域 AI Agent 产品规划</div>
+      <a class="link" href="https://talent.baidu.com/jobs/detail/SOCIAL/7115a741-1535-4c94-a795-504a4068316c" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">北京</span>
+      </div>
+      <div class="jname">医生 Agent 产品专家(J100602)</div>
+      <div class="hl">医生智能体 / 专业分身</div>
+      <a class="link" href="https://talent.baidu.com/jobs/detail/SOCIAL/1f7d8a88-1c3a-473c-bf50-66f6a11244d4" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">北京</span>
+      </div>
+      <div class="jname">B端医疗 AI 产品经理(J97199) AI 医院 Agent</div>
+      <div class="hl">AI 医院 Agent，对接 HIS/LIS/PACS</div>
+      <a class="link" href="https://watchjobs.net/zh/explore/job/c262-3f16d3d15d4f23bc/B%E7%AB%AF%E5%8C%BB%E7%96%97AI%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86-J97199-%E7%99%BE%E5%BA%A6" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div></div>
+    </section>
+    <section class="company">
+      <div class="co-head">
+        <h2>阿里巴巴 / 阿里健康</h2>
+        <span class="co-tag">通用 Agent → 健康 Agent</span>
+      </div>
+      <p class="co-note">先在通用智能体练手，再切阿里健康的数据与 Agent 方向。</p>
+      <div class="grid">
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">杭州</span>
+      </div>
+      <div class="jname">AI 产品经理-智能体-阿里巴巴</div>
+      <div class="hl">Agent 与人协作产品设计</div>
+      <a class="link" href="https://www.quanzhi.com/job/6a7d3934f87cf99210c610f6" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">杭州/北京</span>
+      </div>
+      <div class="jname">阿里健康-AI 产品经理(数据与 Agent 方向)</div>
+      <div class="hl">企业 Skills / 垂直 Agents</div>
+      <a class="link" href="https://www.quanzhi.com/job/6a74136773ad7cc859c3b632" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div></div>
+    </section>
+    <section class="company">
+      <div class="co-head">
+        <h2>智谱 AI</h2>
+        <span class="co-tag">Agent 平台 / MaaS</span>
+      </div>
+      <p class="co-note">Agent 产品经理是其热招岗之一。社招门户统一投递，进去搜「Agent 产品经理」。</p>
+      <div class="grid">
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">北京</span>
+      </div>
+      <div class="jname">Agent 产品经理（社招热招岗）</div>
+      <div class="hl">GLM 生态 Agent 产品</div>
+      <a class="link" href="https://zhipu-ai.jobs.feishu.cn/s/iDrJNfvn" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div></div>
+    </section>
+    <section class="company">
+      <div class="co-head">
+        <h2>蚂蚁集团 阿福</h2>
+        <span class="co-tag">健康 Agent（技术平台，非医疗机构）</span>
+      </div>
+      <p class="co-note">阿福是蚂蚁的健康 AI 产品，Agent / 多模态 / 国际化都有坑。</p>
+      <div class="grid">
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">杭州</span>
+      </div>
+      <div class="jname">大模型策略产品专家(医疗方向)-蚂蚁阿福</div>
+      <div class="hl">记忆 / Agent / 数字人</div>
+      <a class="link" href="https://www.quanzhi.com/job/6a663a3d62f6005b2b34409e" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">杭州</span>
+      </div>
+      <div class="jname">AI 应用产品经理(国际化)-医疗健康</div>
+      <div class="hl">东南亚智能问诊 Agent</div>
+      <a class="link" href="https://watchjobs.net/zh/explore/job/c493-fa625d0ed37ff8a3/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2-AI%E5%BA%94%E7%94%A8%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86-%E5%9B%BD%E9%99%85%E5%8C%96%E6%96%B9%E5%90%91-%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">杭州</span>
+      </div>
+      <div class="jname">多模态产品专家(医疗文档理解)-健康事业群</div>
+      <div class="hl">报告解读 VLM / Agent</div>
+      <a class="link" href="https://watchjobs.net/zh/explore/job/c493-0ce9544db2d087b9/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2-%E5%A4%9A%E6%A8%A1%E6%80%81%E4%BA%A7%E5%93%81%E4%B8%93%E5%AE%B6-%E8%A7%86%E8%A7%89%2F%E5%8C%BB%E7%96%97%E6%96%87%E6%A1%A3%E7%90%86%E8%A7%A3%E6%96%B9%E5%90%91-%E5%81%A5%E5%BA%B7%E4%BA%8B%E4%B8%9A%E7%BE%A4-%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">杭州</span>
+      </div>
+      <div class="jname">用户产品专家-健康事业群(阿福)</div>
+      <div class="hl">阿福基础体验 + AI 功能</div>
+      <a class="link" href="https://www.zhipin.com/zhaopin/788ca0076391ae0a0nB42di-EQ~~/" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div></div>
+    </section>
+    <section class="company">
+      <div class="co-head">
+        <h2>京东健康</h2>
+        <span class="co-tag">多智能体平台</span>
+      </div>
+      <p class="co-note">多智能体协同调度平台，Agent × 医疗场景。</p>
+      <div class="grid">
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">北京</span>
+      </div>
+      <div class="jname">产品经理-多智能体协同调度平台</div>
+      <div class="hl">Agent / Plan / Skill 三层编排</div>
+      <a class="link" href="https://watchjobs.net/zh/explore/job/c257-221700/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86-%E4%BA%AC%E4%B8%9C" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="检索">
+      <div class="card-top">
+        <span class="badge" style="background:#fbbf2422;color:#fbbf24;border:1px solid #fbbf2455">检索</span>
+        <span class="city">北京</span>
+      </div>
+      <div class="jname">京东招聘首页（检索更多）</div>
+      <div class="hl">搜「AI / Agent / 健康」</div>
+      <a class="link" href="https://zhaopin.jd.com/" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div></div>
+    </section>
+    <section class="company">
+      <div class="co-head">
+        <h2>美团 医药健康事业部</h2>
+        <span class="co-tag">Agent 产品矩阵</span>
+      </div>
+      <p class="co-note">把治理能力重构为 Agent 产品矩阵，医药健康 BU。</p>
+      <div class="grid">
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">北京</span>
+      </div>
+      <div class="jname">综合治理产品经理(Agent 产品矩阵)</div>
+      <div class="hl">合规 Agent / 治理 Copilot</div>
+      <a class="link" href="https://zhaopin.meituan.com/web/position/detail?highlightType=social&jobUnionId=4659090996" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div>
+    <div class="card" data-type="产品">
+      <div class="card-top">
+        <span class="badge" style="background:#a78bfa22;color:#a78bfa;border:1px solid #a78bfa55">产品</span>
+        <span class="city">北京</span>
+      </div>
+      <div class="jname">AI 产品 Builder(Agent 产品 0-1)</div>
+      <div class="hl">AI 原生产品从 0 到 1</div>
+      <a class="link" href="https://watchjobs.net/zh/explore/job/c259-ea5f02c22dfcaf3f/AI%E4%BA%A7%E5%93%81Builder-%E7%BE%8E%E5%9B%A2" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div></div>
+    </section>
+    <section class="company">
+      <div class="co-head">
+        <h2>华为云（备选 · 有协作关系）</h2>
+        <span class="co-tag">生态型 FDE / 解决方案</span>
+      </div>
+      <p class="co-note">你本身和华为有协作，盘古 + 医疗是重点方向。岗位偏解决方案 / FDE，门户统一搜「盘古 医疗 / AI 解决方案」。</p>
+      <div class="grid">
+    <div class="card" data-type="检索">
+      <div class="card-top">
+        <span class="badge" style="background:#fbbf2422;color:#fbbf24;border:1px solid #fbbf2455">检索</span>
+        <span class="city">全国</span>
+      </div>
+      <div class="jname">华为云 career 门户（搜 盘古/医疗/AI解决方案）</div>
+      <div class="hl">生态型 FDE / 解决方案架构师</div>
+      <a class="link" href="https://career.huawei.com/" target="_blank" rel="noopener">查看招聘页 ↗</a>
+    </div></div>
+    </section>
+
+<div class="exclude">
+  <b>已剔除（纯医疗机构，你明确不考虑）：</b> 讯飞医疗、平安健康、固生堂、香雪制药、榕树家 / 树家医学、传神「素问中医大模型」、山东扁鹊、愈邻堂、漳州科能、国聘医疗大模型等。这些更偏「医疗本体」，与「先 Agent、后医疗」的路线不符，故不列入。
+</div>
+
+<footer>数据来源：各公司官方招聘页 / 腾讯招聘 API / 智联·猎聘·BOSS·WatchJobs 公开渠道，抓取于 2026-09。链接可能随在招状态变动，点进去以官方当前页为准。</footer>
+</div>
+
+<script>
+document.querySelectorAll('.fbtn').forEach(b=>{
+  b.onclick=()=>{
+    document.querySelectorAll('.fbtn').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    const f=b.dataset.f;
+    document.querySelectorAll('.card').forEach(c=>{
+      c.style.display=(f==='all'||c.dataset.type===f)?'flex':'none';
+    });
+  };
+});
+</script>
+</body></html>
